@@ -12,5 +12,24 @@
  mongod in terminal
  node app.js
  ```
+ ## article Schema 
+ ```JavaScript
+ const articleSchema = {
+    title: String,
+    content: String,
+}
+ ```
+ 
+ ## usage
+ ```JavaScript
+ app.get("articles")
+ app.post("articles")
+ app.delete("articles")
+ 
+app.get("/articles/:articleTitle")
+app.put("/articles/:articleTitle")
+app.patch("/articles/:articleTitle")
+app.delete("/articles/:articleTitle")
+ ```
  
  
